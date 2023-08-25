@@ -10,7 +10,7 @@ public class SequencedData extends Message {
 
     public SequencedData(byte[] messageBytes) {
         super(messageBytes);
-        data = Arrays.copyOfRange(messageBytes, 1, bytes.length - 1);
+        data = Arrays.copyOfRange(messageBytes, 1, bytes.length);
     }
 
     public SequencedData(byte[] data, boolean fromData) {

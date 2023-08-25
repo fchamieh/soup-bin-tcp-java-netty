@@ -10,7 +10,7 @@ public class UnsequencedData extends Message {
 
     public UnsequencedData(byte[] messageBytes) {
         super(messageBytes);
-        data = Arrays.copyOfRange(messageBytes, 1, bytes.length - 1);
+        data = Arrays.copyOfRange(messageBytes, 1, bytes.length);
     }
 
     public UnsequencedData(byte[] data, boolean forData) {
